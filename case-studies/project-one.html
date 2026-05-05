@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Magazine — Case Study | Andrea Marquez Portfolio</title>
+  
+
+  <meta property="og:title" content="Wanderlust Magazine — Case Study" />
+  <meta property="og:description" content="A five-page travel magazine built with HTML5 and CSS for CMI 3315." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main navigation">
+        <a href="../index.html" class="site-logo">Andrea<span>.</span></a>
+        <div class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../work.html" class="active">Work</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="case-hero" aria-labelledby="case-title">
+      <div class="container">
+        <p class="case-eyebrow">Case Study · Web Design · CMI 3315 · Project 2</p>
+        <h1 id="case-title">Wanderlust Magazine</h1>
+        <div class="case-meta">
+          <div class="case-meta-item">
+            <span>Type</span>
+            Web Design
+          </div>
+          <div class="case-meta-item">
+            <span>Course</span>
+            CMI 3315 — Intro to Web Design
+          </div>
+          <div class="case-meta-item">
+            <span>Semester</span>
+            Spring 2026
+          </div>
+          <div class="case-meta-item">
+            <span>Tools</span>
+            HTML5 · CSS3 · VS Code
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- AI-assisted: Claude (Anthropic) helped design this sticky sidebar layout
+           using CSS Grid with position: sticky to keep the sidebar in view while
+           the main body scrolls. This was the second of the two hardest formatting
+           structures cited in the project. -->
+      <div class="case-layout">
+
+        <article class="case-body">
+
+          <h2>Project Overview</h2>
+          <p>
+            Wanderlust Magazine is a fictional, five page travel publication website I designed and built for CMI 3315. Inspired by print magazines like Condé Nast Traveler and Afar, the site focuses on long form storytelling and editorial photography. The goal was to apply all layout and CSS skills learned in the first half of the semester in a publication quality design.
+          </p>
+
+          <figure class="case-screenshot">
+            <img
+              src="../assets/images/projects/wanderlust-thumb.png"
+              loading="lazy"
+            />
+            <figcaption>Wanderlust Magazine homepage, featuring a full screen hero.</figcaption>
+          </figure>
+
+          <h2>The Challenge</h2>
+          <p>
+            The main challenge was creating a site that felt genuine, not like a student project, while still meeting every requirement in the rubric. I also wanted each of the five pages to feel distinct while sharing a clear identity. The second challenge was making the article page's sidebar stay visible as users scrolled through the body text, which required a sticky positioning I hadn't used before.
+          </p>
+
+          <h2>My Role</h2>
+          <p>
+            I was the sole designer and developer. I handled the complete process from concept to deployment, planning the layout with hand sketches, choosing the color palette and typography, writing all the HTML and CSS, and sourcing photography from Unsplash.
+          </p>
+
+          <h2>Design Process</h2>
+          <p>
+            Before writing any code, I sketched each page on paper to plan the layout and content order. I started with the homepage, deciding how the five pages would link to one another. I chose a forest green and off white palette because it reminded me of nature and editorial print quality, paired with Playfair Display for headings and Source Serif 4 for body text.
+          </p>
+          <p>
+            I built a CSS custom properties system at the top of my stylesheet so that every color, font, and spacing value was defined in one place, making changes fast and keeping the design cohesive.
+          </p>
+
+          <h2>Key Technical Features</h2>
+          <ul>
+            <li>CSS Grid and Flexbox used across all five pages for adaptive layouts</li>
+            <li>Sticky sidebar on the article page using <code>position: sticky</code></li>
+            <li>Responsive hamburger navigation at 768px and 480px breakpoints</li>
+            <li>Asymmetric photo gallery built with CSS Grid named areas</li>
+            <li>Keyframe animations on page load and hover transitions throughout</li>
+            <li>Lazy loading on all below the fold images</li>
+            <li>Semantic HTML5 structure with ARIA labels for accessibility</li>
+          </ul>
+
+          <h2>Solution</h2>
+          <p>
+            The final site includes five fully built pages: a homepage with a full screen hero and featured article grid, a long form article page with sticky sidebar, a destination category page with filter buttons, a photography gallery with hover captions, and an About page. All pages share one external CSS file and consistent navigation.
+          </p>
+
+          <h2>Results &amp; Outcomes</h2>
+          <p>
+            The project met all technical requirements of the rubric and was submitted. The sticky sidebar, which I initially struggled with, ended up working cleanly using "position: sticky" combined with a "top" offset that accounts for the fixed navigation height. I validated all HTML and CSS and used Lighthouse tests in Chrome to check performance and accessibility.
+          </p>
+
+          <div class="reflection-block">
+            <h3>Reflection</h3>
+            <p>
+              This project taught me that design systems setting up your variables and typography scale before you write a single layout rule save an enormous amount of time. I also learned that the sticky sidebar layout, which felt intimidating at first, actually requires very few CSS rules once you understand how the stacking works. If I were to do this project again, I'd spend more time on mobile first layout from the start, rather than adapting a desktop first design downward.
+            </p>
+          </div>
+
+        </article>
+
+        <aside class="case-sidebar" aria-label="Project details">
+
+          <div class="sidebar-block">
+  <h4>Live Project</h4>
+  <p>
+    <!-- This points to the correct folder and filename -->
+    <a href="../travel_magazine/wanderlust-index.html" style="color: var(--color-accent);">View Wanderlust Magazine →</a>
+  </p>
+</div>
+
+          <div class="sidebar-block">
+            <h4>Pages Built</h4>
+            <ul>
+              <li>Homepage (index.html)</li>
+              <li>Article page (article.html)</li>
+              <li>Destinations (category.html)</li>
+              <li>Gallery (gallery.html)</li>
+              <li>About (about.html)</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-block">
+            <h4>Techniques Used</h4>
+            <ul>
+              <li>CSS Grid</li>
+              <li>Flexbox</li>
+              <li>CSS Custom Properties</li>
+              <li>position: sticky</li>
+              <li>Keyframe animations</li>
+              <li>Responsive breakpoints</li>
+              <li>Semantic HTML5</li>
+              <li>ARIA accessibility</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-block">
+            <h4>Fonts</h4>
+            <ul>
+              <li>Playfair Display (headings)</li>
+              <li>Source Serif 4 (body)</li>
+              <li>DM Sans (UI / nav)</li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+    <section style="border-top: 1px solid var(--color-border); padding: var(--space-lg) 0;" aria-label="Next project">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+        <a href="../work.html" class="btn btn-outline">← All Projects</a>
+        <a href="project-two.html" class="btn btn-primary">Next: Campus Gun Violence →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="site-logo">Andrea<span>.</span></a>
+          <p>Bilingual journalist and web designer. B.A. in Journalism/Advertising — Texas Tech University, Class of 2028.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../work.html">Work</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Projects">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="project-one.html">Wanderlust Magazine</a></li>
+            <li><a href="project-two.html">Campus Gun Violence</a></li>
+            <li><a href="project-three.html">Pickleball &amp; Alzheimer's</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Andrea Marquez. All rights reserved.</p>
+        <p>CMI 3315 · Texas Tech University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav   = document.getElementById('main-nav');
+    hamburger.addEventListener('click', function () {
+      mainNav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+    });
+
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

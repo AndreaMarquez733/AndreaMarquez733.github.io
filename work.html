@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work & Projects — Andrea Marquez Portfolio</title>
+  <meta name="description" content="Browse Andrea Marquez's journalism articles, web design projects, and case studies from CMI 3315 and JOUR coursework at Texas Tech University." />
+
+  <meta property="og:title" content="Work & Projects — Andrea Marquez" />
+  <meta property="og:description" content="Web design, news writing, and journalism work from a Texas Tech journalism student." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">Andrea<span>.</span></a>
+        <div class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="active">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="work-heading">
+      <div class="container">
+        <span class="section-label">Portfolio</span>
+        <h1 id="work-heading">Selected Work</h1>
+        <p>Three projects spanning web design, investigative reporting, and community journalism.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project grid">
+      <div class="container">
+
+        <!-- AI-assisted: Claude (Anthropic) helped design this CSS Grid
+             layout using asymmetric column spans for an editorial feel. -->
+        <div class="projects-grid">
+
+          <article class="project-card large reveal">
+            <div class="project-card-img">
+              <img
+                src="assets/images/projects/wanderlust-thumb.png"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-body">
+              <p class="project-tag">Web Design · CMI 3315 · Project 2</p>
+              <h3>Wanderlust Magazine</h3>
+              <p>A fully designed, five-page travel magazine website built from scratch using semantic HTML5 and custom CSS. Features an editorial layout, photo gallery with CSS Grid, and sticky sidebar navigation.</p>
+              <a href="travel_magazine/wanderlust-index.html" class="project-link">View Wanderlust →</a>
+            </div>
+          </article>
+
+          <article class="project-card small reveal">
+            <div class="project-card-img">
+              <img
+                src="assets/images/projects/news3-thumb.jpg"
+                alt="Abstract image representing a news article about campus gun violence"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-body">
+              <p class="project-tag">News Writing · CMI 3315</p>
+              <h3>Young Adults Worry About Guns, Push for Reform</h3>
+              <p>A reported feature on campus gun violence drawing on firsthand accounts and national data from Everytown Research and the CDC.</p>
+              <a href="case-studies/project-two.html" class="project-link">View Case Study →</a>
+            </div>
+          </article>
+
+          <article class="project-card full reveal">
+            <div class="project-card-img">
+              <img
+                src="assets/images/projects/news2-thumb.jpg"
+                alt="Pickleball paddles on a court, representing community sports fundraising"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-card-body">
+              <p class="project-tag">News Writing · JOUR 2310 · News 2</p>
+              <h3>Local Pickleball Business Hosts Alzheimer's Fundraising Event</h3>
+              <p>
+                A community news story covering Lubbock Indoor Pickleball's monthly fundraising tournaments for Alzheimer's disease research where sport, community, and purpose converge in West Texas.
+              </p>
+              <a href="case-studies/project-three.html" class="project-link">View Case Study →</a
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">Andrea<span>.</span></a>
+          <p>Bilingual journalist and web designer. B.A. in Journalism/Advertising — Texas Tech University, Class of 2028.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Projects">
+          <h4>Projects</h4>
+          <ul>
+            <li><a href="travel_magazine/wanderlust-index.html">Wanderlust Magazine</a></li>
+            <li><a href="case-studies/project-two.html">Campus Gun Violence</a></li>
+            <li><a href="case-studies/project-three.html">Pickleball &amp; Alzheimer's</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Andrea Marquez. All rights reserved.</p>
+        <p>CMI 3315 · Texas Tech University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav   = document.getElementById('main-nav');
+    hamburger.addEventListener('click', function () {
+      mainNav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+    });
+
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

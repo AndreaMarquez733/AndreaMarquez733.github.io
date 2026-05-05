@@ -1,0 +1,8 @@
+DEPLOYMENT INFORMATION
+======================
+Student: Andrea Marquez
+Project: CMI 3315 — Project 3: Professional Portfolio Website
+Due Date: May 4, 2026
+
+Live URL: [To be filled in after GitHub Pages deployment]
+
