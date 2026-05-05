@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Wanderlust Magazine – Our Story, Mission & Team</title>
+  <meta name="description" content="Meet the team behind Wanderlust Magazine. We are travel writers, photographers, and storytellers devoted to finding the world's most overlooked and beautiful places." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Extra styles for single-author layout -->
+  <style>
+    .author-section {
+      background: var(--color-white);
+    }
+
+    .author-card {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: var(--space-2xl);
+      align-items: start;
+      background: var(--color-light);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .author-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .author-card-body {
+      padding: var(--space-xl) var(--space-xl) var(--space-xl) 0;
+    }
+
+    .author-card-body h2 {
+      margin-bottom: var(--space-xs);
+    }
+
+    .author-card-body .team-role {
+      font-family: var(--font-ui);
+      font-size: var(--fs-md);
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: var(--space-md);
+      display: block;
+    }
+
+    .author-card-body p {
+      color: var(--color-text-light);
+      margin-bottom: var(--space-sm);
+    }
+
+    @media (max-width: 768px) {
+      .author-card {
+        grid-template-columns: 1fr;
+      }
+      .author-card img {
+        height: 300px;
+      }
+      .author-card-body {
+        padding: var(--space-lg);
+      }
+    }
+
+    /* Contact info only — no form box */
+    .contact-info-only {
+      background: var(--color-primary);
+      padding: var(--space-2xl) 0;
+    }
+
+    .contact-info-only .inner {
+      max-width: 600px;
+    }
+
+    .contact-info-only h2 {
+      color: var(--color-white);
+      margin-bottom: var(--space-md);
+    }
+
+    .contact-info-only p {
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: var(--space-md);
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-sm);
+    }
+
+    .contact-detail .icon {
+      font-size: 1.2rem;
+    }
+
+    .contact-detail p {
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0;
+      font-size: var(--fs-sm);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main navigation">
+        <a href="index.html" class="site-logo">Wander<span>lust</span></a>
+        <div class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Destinations</a></li>
+            <li><a href="article.html">Features</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+   
+    <section class="section about-hero" aria-labelledby="about-heading">
+      <div class="container" style="display: contents;">
+        <div class="about-hero-text container">
+          <span class="section-label">Who We Are</span>
+          <h1 id="about-heading">We Believe the World Is Better Explored Slowly</h1>
+          <p>Wanderlust Magazine was founded by travel writers who were tired of content that told people where to go without ever explaining why it mattered. We cover places with depth, honesty, and an unapologetic love of getting lost.</p>
+          <p>We are based everywhere and nowhere — our team works remotely from six countries, which we consider an occupational perk.</p>
+        </div>
+        <div class="about-hero-image container">
+          <img
+            src="assets/images/about-hero.jpg"
+            alt="writer working"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission-section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <span class="section-label">Our Values</span>
+          <h2 id="mission-heading">What Drives Us</h2>
+          <div class="section-divider" style="margin: var(--space-sm) auto 0;"></div>
+        </div>
+        <div class="mission-grid">
+          <div class="mission-card">
+            <div class="mission-icon" aria-hidden="true">🗺️</div>
+            <h3>Depth Over Volume</h3>
+            <p>We publish fewer stories than most travel sites. Every piece we run has been reported in person, fact-checked, and edited with care. We'd rather be good than prolific.</p>
+          </div>
+          <div class="mission-card">
+            <div class="mission-icon" aria-hidden="true">🤝</div>
+            <h3>Responsible Travel</h3>
+            <p>We think hard about the impact of the places we recommend. We flag overtourism, champion local businesses, and try to reckon honestly with travel's environmental costs.</p>
+          </div>
+          <div class="mission-card">
+            <div class="mission-icon" aria-hidden="true">✍️</div>
+            <h3>Real Writing</h3>
+            <p>Our writers are writers first. We care about sentences, about voice, about the kind of storytelling that makes a place feel alive before you've ever been there.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR SECTION — single author, Andrea -->
+    <section class="section author-section" aria-labelledby="author-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Author</span>
+          <h2 id="author-heading">Meet the Writer</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="author-card">
+
+          <img
+            src="assets/images/Andrea.jpg"
+            alt="Andrea, travel writer and editor of Wanderlust Magazine"
+          />
+          <div class="author-card-body">
+            <h2>Andrea</h2>
+            <span class="team-role">Editor &amp; Travel Writer</span>
+            <p>Andrea is the founder and lead writer of Wanderlust Magazine. With a background in journalism and a passport full of stamps from over 50 countries, she brings both rigorous research and a personal voice to every story she tells.</p>
+            <p>She specializes in slow travel, cultural immersion, and finding the places that feel untouched by the modern tourism machine. When she's not on the road, she's writing from a small apartment with too many maps on the walls.</p>
+            <p>Her work has appeared in print and digital publications across Europe and North America. She believes the best travel writing doesn't just describe a place — it makes you feel like you've already been there.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   
+    <section class="contact-info-only" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="inner">
+          <span class="section-label" style="color: var(--color-white);">Get in Touch</span>
+          <h2 id="contact-heading">Contact Information</h2>
+          <p>Whether you want to pitch a story, ask about advertising, or just say hello from wherever you are in the world — our inbox is always open.</p>
+
+          <div class="contact-detail">
+            <span class="icon" aria-hidden="true">✉️</span>
+            <p>hello@wanderlustmag.com</p>
+          </div>
+          <div class="contact-detail">
+            <span class="icon" aria-hidden="true">📝</span>
+            <p>Story pitches: pitches@wanderlustmag.com</p>
+          </div>
+          <div class="contact-detail">
+            <span class="icon" aria-hidden="true">📍</span>
+            <p>Wanderlust Magazine, Rua do Alecrim 42, 1200 Lisbon, Portugal</p>
+          </div>
+          <div class="contact-detail">
+            <span class="icon" aria-hidden="true">📱</span>
+            <p>Instagram: @wanderlustmag &nbsp;·&nbsp; Twitter: @wanderlustmag</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo">Wander<span>lust</span></a>
+          <p>Stories from every corner of the earth. We write for the curious traveler who craves depth over snapshots.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Destinations">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="category.html">Europe</a></li>
+            <li><a href="category.html">Asia</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Topics">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="category.html">Adventure</a></li>
+            <li><a href="category.html">Culture</a></li>
+            <li><a href="category.html">Food</a></li>
+            <li><a href="gallery.html">Photography</a></li>
+            <li><a href="category.html">Budget Travel</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="About">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="about.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Wanderlust Magazine. All rights reserved.</p>
+        <p>Privacy Policy &nbsp;·&nbsp; Terms of Use</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', function () {
+      mainNav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+    });
+  </script>
+
+</body>
+</html>
